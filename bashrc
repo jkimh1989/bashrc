@@ -30,3 +30,5 @@ WHITE_TEXT="\[$(tput setaf 7)\]"
 export PS1="${BOLD_TEXT}${CYAN_TEXT}\u${BLACK_TEXT}@${RED_TEXT}\h:${DEFAULT_TEXT}${YELLOW_TEXT}\w $ ${DEFAULT_TEXT}\n"
 
 # User specific aliases and functions
+alias yumcheck='cat sos_commands/rpm/package-data | grep -v "Red Hat, Inc\." | sort | cut -f1'
+alias secureftp='ssh jaykim@attsecuretools.rdu2.cee.redhat.com'
